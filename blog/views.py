@@ -55,7 +55,7 @@ def detail(request, pk):
     # 将文章、表单、以及文章下的评论列表作为模板变量传给 detail.html 模板，以便渲染相应数据。
     context = {'post': post,
                'form': form,
-               'comment_list': comment_list
+               'comment_list': comment_list,
                }
     return render(request, 'blog/detail.html', context=context)
 
